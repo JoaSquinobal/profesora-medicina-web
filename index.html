@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profe Ceci - Clases Particulares de Medicina</title>
+  <title>Clases Particulares de Medicina</title>
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -43,16 +43,14 @@
   <!-- SOBRE -->
   <section class="max-w-5xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-10 items-center reveal">
 
-    <!-- Foto -->
     <div class="flex justify-center">
       <img
         src="assets/img/cecilia.jpg"
         alt="Cecilia, profesora particular de Medicina"
-        class="rounded-2xl shadow-lg w-72 transition hover:scale-105 hover:shadow-xl"
+        class="rounded-2xl shadow-lg w-72 transition hover:scale-105"
       />
     </div>
 
-    <!-- Texto -->
     <div>
       <h2 class="text-2xl font-bold mb-4">Hola, soy Cecilia</h2>
       <p>
@@ -83,38 +81,51 @@
     <h2 class="text-2xl font-bold mb-4">Metodología de trabajo</h2>
     <p>
       Clases individuales o en grupos reducidos, con un enfoque práctico y
-      explicación razonada de los contenidos. La preparación se orienta
-      específicamente a parciales y finales, con abundante ejercitación
-      tanto oral como escrita.
+      explicación razonada de los contenidos. Preparación específica para
+      parciales y finales, con ejercitación oral y escrita.
     </p>
   </section>
 
   <!-- RESEÑAS -->
-  <section class="bg-white py-16 px-6 reveal">
-    <div class="max-w-5xl mx-auto">
+  <section class="bg-blue-50 py-16 px-6 reveal">
+    <div class="max-w-6xl mx-auto">
       <h2 class="text-2xl font-bold mb-10 text-center">
         Opiniones de alumnos
       </h2>
 
-      <div class="grid md:grid-cols-3 gap-6">
-        <img
-          src="assets/img/resena1.jpg"
-          alt="Reseña alumno"
-          class="rounded-xl shadow-md transition hover:scale-105 hover:shadow-xl"
-        />
-        <img
-          src="assets/img/resena2.jpg"
-          alt="Reseña alumno"
-          class="rounded-xl shadow-md transition hover:scale-105 hover:shadow-xl"
-        />
-        <img
-          src="assets/img/resena3.jpg"
-          alt="Reseña alumno"
-          class="rounded-xl shadow-md transition hover:scale-105 hover:shadow-xl"
-        />
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+
+        <div class="bg-white p-6 rounded-2xl shadow-md transition hover:scale-105">
+          <p class="text-yellow-400 text-lg mb-2">★★★★★</p>
+          <p class="mb-4 italic">
+            “Gracias a las clases pude entender temas que me costaban muchísimo
+            y aprobar el final sin problemas.”
+          </p>
+          <p class="font-semibold">Martín G.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md transition hover:scale-105">
+          <p class="text-yellow-400 text-lg mb-2">★★★★☆</p>
+          <p class="mb-4 italic">
+            “Muy clara para explicar y siempre dispuesta a resolver dudas.
+            Totalmente recomendable.”
+          </p>
+          <p class="font-semibold">Lucía R.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md transition hover:scale-105">
+          <p class="text-yellow-400 text-lg mb-2">★★★★★</p>
+          <p class="mb-4 italic">
+            “Excelente acompañamiento durante toda la cursada.
+            Me ayudó mucho a organizar el estudio.”
+          </p>
+          <p class="font-semibold">Nicolás P.</p>
+        </div>
+
       </div>
 
-      <div class="text-center mt-10">
+      <!-- BOTÓN FORM -->
+      <div class="text-center">
         <a
           href="https://forms.gle/g5MXYEkFcaDpKpYq8"
           target="_blank"
@@ -123,11 +134,12 @@
           Dejar mi reseña
         </a>
       </div>
+
     </div>
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="bg-blue-50 py-16 px-6 text-center reveal">
+  <section id="contacto" class="bg-blue-600 text-white py-16 px-6 text-center reveal">
     <h2 class="text-2xl font-bold mb-4">Contacto</h2>
 
     <p class="mb-6">
@@ -144,7 +156,6 @@
     </a>
   </section>
 
-  <!-- JS Animaciones -->
   <script>
     const reveals = document.querySelectorAll(".reveal");
 
