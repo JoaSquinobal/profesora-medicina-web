@@ -3,16 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clases Particulares de Medicina</title>
+  <title>Profe Ceci - Clases Particulares de Medicina</title>
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
 
   <!-- HERO -->
-  <section class="bg-blue-600 text-white py-20 px-6 text-center">
+  <section class="bg-blue-600 text-white py-20 px-6 text-center reveal">
     <h1 class="text-4xl font-bold mb-4">
       Clases Particulares Universitarias de Medicina
     </h1>
@@ -21,21 +34,21 @@
     </p>
     <a
       href="#contacto"
-      class="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold"
+      class="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold transition hover:scale-105 hover:shadow-lg"
     >
       Contactar
     </a>
   </section>
 
   <!-- SOBRE -->
-  <section class="max-w-5xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-10 items-center">
+  <section class="max-w-5xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-10 items-center reveal">
 
     <!-- Foto -->
     <div class="flex justify-center">
       <img
         src="assets/img/cecilia.jpg"
         alt="Cecilia, profesora particular de Medicina"
-        class="rounded-2xl shadow-lg w-72"
+        class="rounded-2xl shadow-lg w-72 transition hover:scale-105 hover:shadow-xl"
       />
     </div>
 
@@ -53,7 +66,7 @@
   </section>
 
   <!-- MATERIAS -->
-  <section class="bg-white py-16 px-6">
+  <section class="bg-white py-16 px-6 reveal">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-2xl font-bold mb-6">Materias</h2>
       <ul class="list-disc list-inside space-y-2">
@@ -66,7 +79,7 @@
   </section>
 
   <!-- METODOLOGÍA -->
-  <section class="max-w-4xl mx-auto py-16 px-6">
+  <section class="max-w-4xl mx-auto py-16 px-6 reveal">
     <h2 class="text-2xl font-bold mb-4">Metodología de trabajo</h2>
     <p>
       Clases individuales o en grupos reducidos, con un enfoque práctico y
@@ -77,23 +90,35 @@
   </section>
 
   <!-- RESEÑAS -->
-  <section class="bg-white py-16 px-6">
+  <section class="bg-white py-16 px-6 reveal">
     <div class="max-w-5xl mx-auto">
       <h2 class="text-2xl font-bold mb-10 text-center">
         Opiniones de alumnos
       </h2>
 
       <div class="grid md:grid-cols-3 gap-6">
-        <img src="assets/img/resena1.jpg" alt="Reseña alumno" class="rounded-xl shadow-md" />
-        <img src="assets/img/resena2.jpg" alt="Reseña alumno" class="rounded-xl shadow-md" />
-        <img src="assets/img/resena3.jpg" alt="Reseña alumno" class="rounded-xl shadow-md" />
+        <img
+          src="assets/img/resena1.jpg"
+          alt="Reseña alumno"
+          class="rounded-xl shadow-md transition hover:scale-105 hover:shadow-xl"
+        />
+        <img
+          src="assets/img/resena2.jpg"
+          alt="Reseña alumno"
+          class="rounded-xl shadow-md transition hover:scale-105 hover:shadow-xl"
+        />
+        <img
+          src="assets/img/resena3.jpg"
+          alt="Reseña alumno"
+          class="rounded-xl shadow-md transition hover:scale-105 hover:shadow-xl"
+        />
       </div>
 
       <div class="text-center mt-10">
         <a
           href="https://forms.gle/g5MXYEkFcaDpKpYq8"
           target="_blank"
-          class="inline-block bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold"
+          class="inline-block bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold transition hover:scale-105 hover:shadow-lg"
         >
           Dejar mi reseña
         </a>
@@ -102,7 +127,7 @@
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="bg-blue-50 py-16 px-6 text-center">
+  <section id="contacto" class="bg-blue-50 py-16 px-6 text-center reveal">
     <h2 class="text-2xl font-bold mb-4">Contacto</h2>
 
     <p class="mb-6">
@@ -113,11 +138,31 @@
     <a
       href="https://wa.me/5493512258420?text=Hola%20Ceci,%20quiero%20consultar%20por%20clases%20particulares"
       target="_blank"
-      class="inline-block bg-green-500 text-white px-8 py-4 rounded-xl text-lg font-semibold"
+      class="inline-block bg-green-500 text-white px-8 py-4 rounded-xl text-lg font-semibold transition hover:scale-105 hover:shadow-lg"
     >
       Escribime
     </a>
   </section>
+
+  <!-- JS Animaciones -->
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 100;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  </script>
 
 </body>
 </html>
