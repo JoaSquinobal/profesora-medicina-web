@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clases Particulares de Medicina</title>
 
-  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -14,7 +13,6 @@
       transform: translateY(40px);
       transition: all 0.8s ease;
     }
-
     .reveal.active {
       opacity: 1;
       transform: translateY(0);
@@ -32,25 +30,19 @@
     <p class="text-lg mb-6">
       Acompañamiento académico personalizado
     </p>
-    <a
-      href="#contacto"
-      class="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold transition hover:scale-105 hover:shadow-lg"
-    >
+    <a href="#contacto"
+      class="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold transition hover:scale-105 hover:shadow-lg">
       Contactar
     </a>
   </section>
 
   <!-- SOBRE -->
   <section class="max-w-5xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-10 items-center reveal">
-
     <div class="flex justify-center">
-      <img
-        src="assets/img/cecilia.jpg"
+      <img src="assets/img/cecilia.jpg"
         alt="Cecilia, profesora particular de Medicina"
-        class="rounded-2xl shadow-lg w-72 transition hover:scale-105"
-      />
+        class="rounded-2xl shadow-lg w-72 transition hover:scale-105" />
     </div>
-
     <div>
       <h2 class="text-2xl font-bold mb-4">Hola, soy Cecilia</h2>
       <p>
@@ -60,19 +52,50 @@
         y a mejorar su rendimiento en parciales y finales.
       </p>
     </div>
-
   </section>
 
-  <!-- MATERIAS -->
-  <section class="bg-white py-16 px-6 reveal">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-6">Materias</h2>
-      <ul class="list-disc list-inside space-y-2">
-        <li>Fisiología</li>
-        <li>Farmacología</li>
-        <li>Biología Celular y Molecular</li>
-        <li>Bioquímica</li>
-      </ul>
+  <!-- MATERIAS (MEJORADA) -->
+  <section class="bg-white py-20 px-6 reveal">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold mb-12 text-center">
+        Materias que preparo
+      </h2>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+        <div class="bg-blue-50 p-6 rounded-2xl text-center shadow-md transition hover:scale-105">
+          <div class="text-4xl mb-4">🧠</div>
+          <h3 class="font-semibold text-lg mb-2">Fisiología</h3>
+          <p class="text-sm text-gray-600">
+            Comprensión integral del funcionamiento del cuerpo humano.
+          </p>
+        </div>
+
+        <div class="bg-blue-50 p-6 rounded-2xl text-center shadow-md transition hover:scale-105">
+          <div class="text-4xl mb-4">💊</div>
+          <h3 class="font-semibold text-lg mb-2">Farmacología</h3>
+          <p class="text-sm text-gray-600">
+            Mecanismos de acción, efectos y usos clínicos.
+          </p>
+        </div>
+
+        <div class="bg-blue-50 p-6 rounded-2xl text-center shadow-md transition hover:scale-105">
+          <div class="text-4xl mb-4">🧬</div>
+          <h3 class="font-semibold text-lg mb-2">Biología Celular</h3>
+          <p class="text-sm text-gray-600">
+            Bases moleculares y celulares de la vida.
+          </p>
+        </div>
+
+        <div class="bg-blue-50 p-6 rounded-2xl text-center shadow-md transition hover:scale-105">
+          <div class="text-4xl mb-4">⚗️</div>
+          <h3 class="font-semibold text-lg mb-2">Bioquímica</h3>
+          <p class="text-sm text-gray-600">
+            Procesos químicos esenciales para la función biológica.
+          </p>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -82,7 +105,7 @@
     <p>
       Clases individuales o en grupos reducidos, con un enfoque práctico y
       explicación razonada de los contenidos. Preparación específica para
-      parciales y finales, con ejercitación oral y escrita.
+      parciales y finales.
     </p>
   </section>
 
@@ -94,83 +117,65 @@
       </h2>
 
       <div class="grid md:grid-cols-3 gap-8 mb-12">
-
         <div class="bg-white p-6 rounded-2xl shadow-md transition hover:scale-105">
-          <p class="text-yellow-400 text-lg mb-2">★★★★★</p>
-          <p class="mb-4 italic">
-            “Gracias a las clases pude entender temas que me costaban muchísimo
-            y aprobar el final sin problemas.”
+          <p class="text-yellow-400 mb-2">★★★★★</p>
+          <p class="italic mb-4">
+            “Gracias a las clases pude entender temas que me costaban muchísimo.”
           </p>
           <p class="font-semibold">Martín G.</p>
         </div>
 
         <div class="bg-white p-6 rounded-2xl shadow-md transition hover:scale-105">
-          <p class="text-yellow-400 text-lg mb-2">★★★★☆</p>
-          <p class="mb-4 italic">
-            “Muy clara para explicar y siempre dispuesta a resolver dudas.
-            Totalmente recomendable.”
+          <p class="text-yellow-400 mb-2">★★★★☆</p>
+          <p class="italic mb-4">
+            “Muy clara para explicar y siempre predispuesta.”
           </p>
           <p class="font-semibold">Lucía R.</p>
         </div>
 
         <div class="bg-white p-6 rounded-2xl shadow-md transition hover:scale-105">
-          <p class="text-yellow-400 text-lg mb-2">★★★★★</p>
-          <p class="mb-4 italic">
-            “Excelente acompañamiento durante toda la cursada.
-            Me ayudó mucho a organizar el estudio.”
+          <p class="text-yellow-400 mb-2">★★★★★</p>
+          <p class="italic mb-4">
+            “Excelente acompañamiento durante toda la cursada.”
           </p>
           <p class="font-semibold">Nicolás P.</p>
         </div>
-
       </div>
 
-      <!-- BOTÓN FORM -->
       <div class="text-center">
-        <a
-          href="https://forms.gle/g5MXYEkFcaDpKpYq8"
-          target="_blank"
-          class="inline-block bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold transition hover:scale-105 hover:shadow-lg"
-        >
+        <a href="https://forms.gle/g5MXYEkFcaDpKpYq8" target="_blank"
+          class="inline-block bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold transition hover:scale-105 hover:shadow-lg">
           Dejar mi reseña
         </a>
       </div>
-
     </div>
   </section>
 
   <!-- CONTACTO -->
   <section id="contacto" class="bg-blue-600 text-white py-16 px-6 text-center reveal">
     <h2 class="text-2xl font-bold mb-4">Contacto</h2>
-
     <p class="mb-6">
       Para consultas sobre clases, horarios o disponibilidad,
       podés escribirme directamente por WhatsApp.
     </p>
-
-    <a
-      href="https://wa.me/5493512258420?text=Hola%20Ceci,%20quiero%20consultar%20por%20clases%20particulares"
+    <a href="https://wa.me/5493512258420?text=Hola%20Ceci,%20quiero%20consultar%20por%20clases%20particulares"
       target="_blank"
-      class="inline-block bg-green-500 text-white px-8 py-4 rounded-xl text-lg font-semibold transition hover:scale-105 hover:shadow-lg"
-    >
+      class="inline-block bg-green-500 text-white px-8 py-4 rounded-xl text-lg font-semibold transition hover:scale-105 hover:shadow-lg">
       Escribime
     </a>
   </section>
 
   <script>
     const reveals = document.querySelectorAll(".reveal");
-
     function revealOnScroll() {
       for (let i = 0; i < reveals.length; i++) {
         const windowHeight = window.innerHeight;
         const elementTop = reveals[i].getBoundingClientRect().top;
-        const elementVisible = 100;
-
-        if (elementTop < windowHeight - elementVisible) {
+        if (elementTop < windowHeight - 100) {
           reveals[i].classList.add("active");
         }
       }
     }
-
     window.addEventListener("scroll", revealOnScroll);
     revealOnScroll();
   </script>
